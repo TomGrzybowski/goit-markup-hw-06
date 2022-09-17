@@ -88,7 +88,17 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 74px;
+  margin-top: 40px;
+}
+
+.order-form > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-font-color);
+  margin: 0px auto 12px;
 }
 
 .label {
@@ -111,7 +121,7 @@ ul {
   border-color: var(--company-blue);
 }
 
-.order-form > label:nth-child(-n + 3) > input {
+.order-form > label:nth-child(-n + 4) > input {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
