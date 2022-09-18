@@ -72,7 +72,7 @@ ul {
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: var(--white-color) url("../images/icons#close") no-repeat;
+  background: var(--white-color) url("../images/icons/close.svg") no-repeat;
   background-position: 50% 50%;
   position: absolute;
   top: 8px;
@@ -106,9 +106,22 @@ ul {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1;
+  position: relative;
 }
 
-.label:focus-within {
+.icon-form {
+  width: 13px;
+  height: 13px;
+  fill: #000000;
+  position: absolute;
+  top: 31px;
+  left: 15px;
+  transition-property: fill, border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label:focus-within .icon-form {
   fill: var(--company-blue);
 }
 
@@ -143,13 +156,6 @@ ul {
   padding-top: 12px;
   font-size: 12px;
   line-height: 1.17;
-}
-
-.policy-check {
-  height: 16px;
-  width: 16px;
-  cursor: pointer;
-  appearance: none;
 }
 
 .order-submit {
@@ -192,6 +198,12 @@ ul {
   width: 448px;
 }
 
+.policy-check {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  appearance: none;
+}
 .policy-label::before {
   display: block;
   position: absolute;
@@ -202,7 +214,9 @@ ul {
   height: 15px;
   border: 2px solid var(--dark-font-color);
   border-radius: 3px;
-  transition: 0.25s;
+  transition-property: border, background-image;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
@@ -210,7 +224,7 @@ ul {
 
 .policy-check:checked + .policy-label::before {
   border: none;
-  background-image: url("../images/icons/icon-check.svg");
+  background-image: url("../images/icons/check.svg");
 }
 
 .newsletter-submit {
@@ -227,6 +241,8 @@ ul {
   line-height: 1.88;
 
   margin-left: 12px;
+
+  position: relative;
 }
 
 .nws-label {
@@ -756,6 +772,20 @@ ul {
 .footer-link:focus > .icon-footer {
   background-color: var(--company-blue);
   cursor: pointer;
+}
+
+.icon-newsletter {
+  position: absolute;
+  top: 13px;
+  left: 148px;
+  /* margin-left: 24px;
+  margin-top: 13px; */
+}
+
+.nws-btn-txt {
+  position: absolute;
+  top: 10px;
+  left: 42px;
 }
 
 .portfolio-main {

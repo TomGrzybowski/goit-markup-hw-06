@@ -18,7 +18,7 @@
     />
     <title>Tomasz Grzybowski Homework</title>
   </head>
-  <body id="agencja-page">
+  <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close></button>
@@ -26,8 +26,8 @@
           <p>Zostaw swoje dane w formularzu poniżej</p>
           <label class="label">
             Imię
-            <svg class="icon-form" width="16" height="10">
-              <use href="./images/icons.svg#person"></use>
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
             </svg>
             <input
               class="input"
@@ -38,9 +38,15 @@
             />
           </label>
           <label class="label">
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
             Telefon <input class="input" type="tel" name="phone" required
           /></label>
           <label class="label">
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
             Email <input class="input" type="email" name="email" required
           /></label>
           <label class="label">
@@ -658,18 +664,9 @@
                 placeholder="E-mail"
               />
               <button class="newsletter-submit" type="submit">
-                Zapisz się
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
-                    fill="white"
-                  />
+                <span class="nws-btn-txt">Zapisz się</span>
+                <svg class="icon-newsletter" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
             </form>
