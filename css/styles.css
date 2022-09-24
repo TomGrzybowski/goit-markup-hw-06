@@ -250,6 +250,10 @@ ul {
   position: relative;
 }
 
+.newsletter-submit:hover {
+  cursor: pointer;
+}
+
 .nws-label {
   width: 358px;
   color: white;
