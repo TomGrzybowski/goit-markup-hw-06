@@ -282,13 +282,17 @@ ul {
   justify-content: space-between;
 }
 
+.agencja-title {
+  background-color: var(--dark-background-color);
+}
+
 .agencja-title > .container {
   height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--dark-background-color);
+  
   background-image: linear-gradient(
       to bottom,
       var(--opaque-bg-color) 0%,
