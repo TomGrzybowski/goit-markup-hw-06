@@ -280,10 +280,31 @@ text-decoration: none;
 
   position: relative;
   top: -10px;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-submit:hover {
+.newsletter-submit:hover,
+.newsletter-submit:focus {
+  text-decoration: underline;
   cursor: pointer;
+  background-color: var(--dark-blue);
+}
+
+.nws-btn-txt {
+  position: absolute;
+  top: 10px;
+  left: 42px;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter-submit:hover .nws-btn-txt,
+.newsletter-submit:focus .nws-btn-txt {
+  text-decoration: underline;
 }
 
 .nws-label {
@@ -837,11 +858,7 @@ text-decoration: none;
   margin-top: 13px; */
 }
 
-.nws-btn-txt {
-  position: absolute;
-  top: 10px;
-  left: 42px;
-}
+
 
 .portfolio-main {
   padding-top: 94px;
