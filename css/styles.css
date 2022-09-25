@@ -296,10 +296,6 @@ text-decoration: none;
   position: absolute;
   top: 10px;
   left: 42px;
-
-  transition-property: background-color;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .newsletter-submit:hover .nws-btn-txt,
