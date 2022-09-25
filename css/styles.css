@@ -189,7 +189,7 @@ ul {
 .footer-form {
   width: 575px;
   margin-left: 78px;
-  padding-top: 22px;
+  
   display: flex;
   flex-wrap: wrap;
 }
@@ -201,9 +201,12 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding-left: 16px;
   background-color: transparent;
+
+  position: relative;
+  top: -10px;
 }
 
 .policy-label {
@@ -273,9 +276,10 @@ text-decoration: none;
   line-height: 1.88;
 
   margin-left: 12px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 
   position: relative;
+  top: -10px;
 }
 
 .newsletter-submit:hover {
@@ -284,6 +288,7 @@ text-decoration: none;
 
 .nws-label {
   width: 358px;
+  height: 16px;
   color: white;
   font-weight: 700;
   font-size: 14px;
@@ -798,6 +803,8 @@ text-decoration: none;
 }
 
 .footer-socials-header {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--white-color);
 }
