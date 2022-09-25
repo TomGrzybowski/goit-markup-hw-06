@@ -77,10 +77,15 @@ ul {
   position: absolute;
   top: 8px;
   left: 490px;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus {
+  background-color: var(--light-background-color);
   cursor: pointer;
 }
 
@@ -170,6 +175,7 @@ ul {
 }
 
 .order-submit:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -202,6 +208,15 @@ ul {
   position: relative;
   width: 448px;
 }
+
+.policy-label >a {
+text-decoration: none;
+}
+
+.policy-label >a:hover,
+.policy-label >a:focus{
+  text-decoration: underline;
+  }
 
 .policy-check {
   height: 16px;
@@ -353,7 +368,9 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.agencja-button:hover {
+.agencja-button:hover,
+.agencja-button:focus {
+  text-decoration: underline;
   cursor: pointer;
 }
 
