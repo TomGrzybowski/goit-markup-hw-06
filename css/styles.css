@@ -15,7 +15,9 @@
   --grey-opaque: rgba(47, 48, 58, 0.8);
   --blue-opaque: rgba(33, 150, 243, 0.9);
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  --dark-blue: rgb(53, 90, 255);
 }
+
 
 body {
   font-family: "Roboto";
@@ -172,11 +174,16 @@ ul {
   border: none;
   color: white;
   margin-top: 30px;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .order-submit:hover {
   text-decoration: underline;
   cursor: pointer;
+  background-color: var(--dark-blue);
 }
 
 .footer-form {
@@ -247,6 +254,11 @@ text-decoration: none;
   background-image: url("../images/icons/check.svg");
 }
 
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .newsletter-submit {
   width: 200px;
   height: 50px;
@@ -261,6 +273,7 @@ text-decoration: none;
   line-height: 1.88;
 
   margin-left: 12px;
+  margin-top: 20px;
 
   position: relative;
 }
@@ -366,12 +379,17 @@ text-decoration: none;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agencja-button:hover,
 .agencja-button:focus {
   text-decoration: underline;
   cursor: pointer;
+  background: var(--dark-blue);
 }
 
 .webstudio {
